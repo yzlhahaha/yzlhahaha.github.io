@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  
+  <meta name="description" content="Airspace Hugo theme">
+  <meta name="author" content="Zilin Yin">
+  <meta name="generator" content="Hugo 0.74.3" />
+  
+  <!-- Mobile Specific Metas -->
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Star Wars Universe</title>
+  <link rel="icon" href="https://yzlhahaha.github.io/images/favicon.ico">
+
+  <!-- Twitter Bootstrs CSS -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/bootstrap/bootstrap.min.css">
+  <!-- Ionicons Fonts Css -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/ionicons/ionicons.min.css">
+  <!-- animate css -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/animate-css/animate.css">
+  <!-- Hero area slider css-->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/slider/slider.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/slick/slick.css">
+  <!-- Fancybox -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/facncybox/jquery.fancybox.css">
+  <!-- hover -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/hover/hover-min.css">
+  <!-- template main css file -->
+  
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/css/style.min.css" integrity="" media="screen">
+</head><body><section class="top-bar animated-header">
+	<div class="container" id="top-container">
+		<div class="row">
+			<div class="col-lg-12">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<a id="corner-block" class="navbar-brand" href="https://yzlhahaha.github.io/">
+						<img id="corner-icon" src="https://yzlhahaha.github.io/images/home.svg">
+						<div id="corner-text">My Website</div>
+						
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+						aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navigation">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="https://yzlhahaha.github.io/">Home</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://yzlhahaha.github.io/about">About</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://yzlhahaha.github.io/project">Project</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://yzlhahaha.github.io/blog">Blog</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://yzlhahaha.github.io/contact">Contact</a>
+							</li>
+							
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="global-page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h2>Star Wars Universe</h2>
+                    <div class="portfolio-meta">
+                        <span>Wednesday, Oct 21, 2020</span>|
+                        <span> Tags:
+                            
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="single-post">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                
+                <div class="post-content">
+                    <h1 id="star-wars-universe">Star Wars Universe</h1>
+<h4 id="in-this-blog-i-will-introduce-how-use-request-to-read-json-format-data-from-star-wars-universe-api-and-how-to-accomplish-some-of-the-tasks-like-get-the-name-of-the-oldest-person-in-the-data-get-the-list-of-the-titles-of-all-the-films-each-person-appeared-in-with-data-processing-techniques">In this blog, I will introduce how use &ldquo;request&rdquo; to read json format data from Star Wars Universe API, and how to accomplish some of the tasks like get the name of the oldest person in the data, get the list of the titles of all the films each person appeared in with data processing techniques.</h4>
+<ul>
+<li>Step 1: Import necessary Python packages and read in json format data.</li>
+</ul>
+<p><img src="/images/blog5/1.png#blog5-1" alt="image"></p>
+<ul>
+<li>Step 2: Define the functions needed to process the read-in json format data. For example, the get_nested() function get the all the information in the nested urls, get_titles() function get all title information, and get_birth_num() get all numeric format of the birth_year data.</li>
+</ul>
+<p><img src="/images/blog5/2.png#blog5-2" alt="image"></p>
+<ul>
+<li>Step 3: Convert the processed data into pandas dataframe.</li>
+</ul>
+<p><img src="/images/blog5/3.png#blog5-3" alt="image"></p>
+<ul>
+<li>Step 4: Use chain method to get the name of the oldest person.</li>
+</ul>
+<p><img src="/images/blog5/4.png#blog5-4" alt="image"></p>
+<ul>
+<li>Step 5: Use chain method to get the list of the titles of all the films each person appeared in.</li>
+</ul>
+<p><img src="/images/blog5/5.png#blog5-5" alt="image"></p>
+<h2 id="references">References</h2>
+<p>The ipynb files can be found at:</p>
+<ul>
+<li><a href="https://github.com/yzlhahaha/star-wars-universe">https://github.com/yzlhahaha/star-wars-universe</a></li>
+</ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Call To Action Section Start -->
+<section id="call-to-action">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">If you are interested...</h1>
+                    
+                    <a href="/contact" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact with me</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Call To Action Section End -->
+
+
+<!-- Footer Section Start -->
+<footer id="footer">
+    <div class="container">
+        <div class="row content-justify-between">
+            <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
+                
+            </div>
+            <div class="col-md-4 col-12">
+                <!-- Social Media -->
+                <ul class="social text-center text-md-right text-lg-right">
+                    <p>You can also find me at:</p>
+                    
+                    <li><a href="https://github.com/yzlhahaha/"><i class="ion-social-github"></i></a></li>
+                    
+                    <li><a href="https://www.linkedin.com/in/zilin-yin-a4138b1a1"><i class="ion-social-linkedin"></i></a></li>
+                    
+                    <li><a href="https://www.facebook.com/profile.php?id=100010171387413"><i class="ion-social-facebook"></i></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer section end -->
+
+<!-- jquery -->
+<script src="https://yzlhahaha.github.io/plugins/jQurey/jquery.min.js"></script>
+<!-- Form Validation -->
+<script src="https://yzlhahaha.github.io/plugins/form-validation/jquery.form.js"></script>
+<script src="https://yzlhahaha.github.io/plugins/form-validation/jquery.validate.min.js"></script>
+<!-- slick slider -->
+<script src="https://yzlhahaha.github.io/plugins/slick/slick.min.js"></script>
+<!-- bootstrap js -->
+<script src="https://yzlhahaha.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+<!-- wow js -->
+<script src="https://yzlhahaha.github.io/plugins/wow-js/wow.min.js"></script>
+<!-- slider js -->
+<script src="https://yzlhahaha.github.io/plugins/slider/slider.js"></script>
+<!-- Fancybox -->
+<script src="https://yzlhahaha.github.io/plugins/facncybox/jquery.fancybox.js"></script>
+<!-- template main js -->
+
+<script src="https://yzlhahaha.github.io/js/script.min.js"></script>
+<!-- google analitycs -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+</script></body>
+</html>

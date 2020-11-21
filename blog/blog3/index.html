@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  
+  <meta name="description" content="Airspace Hugo theme">
+  <meta name="author" content="Zilin Yin">
+  <meta name="generator" content="Hugo 0.74.3" />
+  
+  <!-- Mobile Specific Metas -->
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Malaria: Informative Visualization</title>
+  <link rel="icon" href="https://yzlhahaha.github.io/images/favicon.ico">
+
+  <!-- Twitter Bootstrs CSS -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/bootstrap/bootstrap.min.css">
+  <!-- Ionicons Fonts Css -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/ionicons/ionicons.min.css">
+  <!-- animate css -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/animate-css/animate.css">
+  <!-- Hero area slider css-->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/slider/slider.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/slick/slick.css">
+  <!-- Fancybox -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/facncybox/jquery.fancybox.css">
+  <!-- hover -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/hover/hover-min.css">
+  <!-- template main css file -->
+  
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/css/style.min.css" integrity="" media="screen">
+</head><body><section class="top-bar animated-header">
+	<div class="container" id="top-container">
+		<div class="row">
+			<div class="col-lg-12">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<a id="corner-block" class="navbar-brand" href="https://yzlhahaha.github.io/">
+						<img id="corner-icon" src="https://yzlhahaha.github.io/images/home.svg">
+						<div id="corner-text">My Website</div>
+						
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+						aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navigation">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="https://yzlhahaha.github.io/">Home</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://yzlhahaha.github.io/about">About</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://yzlhahaha.github.io/project">Project</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://yzlhahaha.github.io/blog">Blog</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://yzlhahaha.github.io/contact">Contact</a>
+							</li>
+							
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="global-page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h2>Malaria: Informative Visualization</h2>
+                    <div class="portfolio-meta">
+                        <span>Friday, Sep 18, 2020</span>|
+                        <span> Tags:
+                            
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="single-post">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                
+                <div class="post-content">
+                    <h1 id="description">Description</h1>
+<ul>
+<li>Following are three plots of the Malaria dataset with Plotly. Users can interact with each one of them by specifying the country they want to look for.</li>
+</ul>
+
+  
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<h2 id="table-1---dataset1-visualization">Table 1 - Dataset#1 Visualization</h2>
+<ul>
+<li>&ldquo;malaria_deaths.csv&rdquo; - Malaria deaths by country for all ages across the world and time
+
+
+<div id="/plotly/fig1.json" class="plotly" style="height:500px"></div>
+<script>
+Plotly.d3.json("/plotly/fig1.json", function(err, fig) {
+    Plotly.plot('\/plotly\/fig1.json', fig.data, fig.layout, {responsive: true});
+});
+</script></li>
+</ul>
+<h2 id="table-2---dataset2-visualization">Table 2 - Dataset#2 Visualization</h2>
+<ul>
+<li>&ldquo;malaria_deaths_age.csv&rdquo; - Malaria deaths by age across the world and time
+
+
+<div id="/plotly/fig2.json" class="plotly" style="height:500px"></div>
+<script>
+Plotly.d3.json("/plotly/fig2.json", function(err, fig) {
+    Plotly.plot('\/plotly\/fig2.json', fig.data, fig.layout, {responsive: true});
+});
+</script></li>
+</ul>
+<h2 id="table-3---dataset3-visualization">Table 3 - Dataset#3 Visualization</h2>
+<ul>
+<li>&ldquo;malaria_inc.csv&rdquo; - Malaria incidence by country for all ages across the world across time
+
+
+<div id="/plotly/fig3.json" class="plotly" style="height:500px"></div>
+<script>
+Plotly.d3.json("/plotly/fig3.json", function(err, fig) {
+    Plotly.plot('\/plotly\/fig3.json', fig.data, fig.layout, {responsive: true});
+});
+</script></li>
+</ul>
+<h2 id="references">References</h2>
+<p>The ipynb files can be found at:</p>
+<ul>
+<li><a href="https://github.com/yzlhahaha/malaria-vis">https://github.com/yzlhahaha/malaria-vis</a></li>
+</ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Call To Action Section Start -->
+<section id="call-to-action">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">If you are interested...</h1>
+                    
+                    <a href="/contact" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact with me</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Call To Action Section End -->
+
+
+<!-- Footer Section Start -->
+<footer id="footer">
+    <div class="container">
+        <div class="row content-justify-between">
+            <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
+                
+            </div>
+            <div class="col-md-4 col-12">
+                <!-- Social Media -->
+                <ul class="social text-center text-md-right text-lg-right">
+                    <p>You can also find me at:</p>
+                    
+                    <li><a href="https://github.com/yzlhahaha/"><i class="ion-social-github"></i></a></li>
+                    
+                    <li><a href="https://www.linkedin.com/in/zilin-yin-a4138b1a1"><i class="ion-social-linkedin"></i></a></li>
+                    
+                    <li><a href="https://www.facebook.com/profile.php?id=100010171387413"><i class="ion-social-facebook"></i></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer section end -->
+
+<!-- jquery -->
+<script src="https://yzlhahaha.github.io/plugins/jQurey/jquery.min.js"></script>
+<!-- Form Validation -->
+<script src="https://yzlhahaha.github.io/plugins/form-validation/jquery.form.js"></script>
+<script src="https://yzlhahaha.github.io/plugins/form-validation/jquery.validate.min.js"></script>
+<!-- slick slider -->
+<script src="https://yzlhahaha.github.io/plugins/slick/slick.min.js"></script>
+<!-- bootstrap js -->
+<script src="https://yzlhahaha.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+<!-- wow js -->
+<script src="https://yzlhahaha.github.io/plugins/wow-js/wow.min.js"></script>
+<!-- slider js -->
+<script src="https://yzlhahaha.github.io/plugins/slider/slider.js"></script>
+<!-- Fancybox -->
+<script src="https://yzlhahaha.github.io/plugins/facncybox/jquery.fancybox.js"></script>
+<!-- template main js -->
+
+<script src="https://yzlhahaha.github.io/js/script.min.js"></script>
+<!-- google analitycs -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+</script></body>
+</html>

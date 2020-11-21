@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  
+  <meta name="description" content="Airspace Hugo theme">
+  <meta name="author" content="Zilin Yin">
+  <meta name="generator" content="Hugo 0.74.3" />
+  
+  <!-- Mobile Specific Metas -->
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>COVID19 Analysis</title>
+  <link rel="icon" href="https://yzlhahaha.github.io/images/favicon.ico">
+
+  <!-- Twitter Bootstrs CSS -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/bootstrap/bootstrap.min.css">
+  <!-- Ionicons Fonts Css -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/ionicons/ionicons.min.css">
+  <!-- animate css -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/animate-css/animate.css">
+  <!-- Hero area slider css-->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/slider/slider.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/slick/slick.css">
+  <!-- Fancybox -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/facncybox/jquery.fancybox.css">
+  <!-- hover -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/hover/hover-min.css">
+  <!-- template main css file -->
+  
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/css/style.min.css" integrity="" media="screen">
+</head><body><section class="top-bar animated-header">
+	<div class="container" id="top-container">
+		<div class="row">
+			<div class="col-lg-12">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<a id="corner-block" class="navbar-brand" href="https://yzlhahaha.github.io/">
+						<img id="corner-icon" src="https://yzlhahaha.github.io/images/home.svg">
+						<div id="corner-text">My Website</div>
+						
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+						aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navigation">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="https://yzlhahaha.github.io/">Home</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://yzlhahaha.github.io/about">About</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://yzlhahaha.github.io/project">Project</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://yzlhahaha.github.io/blog">Blog</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://yzlhahaha.github.io/contact">Contact</a>
+							</li>
+							
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="global-page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h2>COVID19 Analysis</h2>
+                    <div class="portfolio-meta">
+                        <span>Wednesday, Nov 18, 2020</span>|
+                        <span> Tags:
+                            
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="single-post">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                
+                <div class="post-content">
+                    <h1 id="covid-19-analysis">COVID-19 Analysis</h1>
+<p>Techniques Used in this Analysis:</p>
+<ul>
+<li>Used Streamlit to build dashboard for data visualization and analysis for public</li>
+<li>Used pandas, seaborn, missingno for data preprocessing (e.g.: missing data imputation, correlation analysis, etc)</li>
+<li>Used Plotly for exploratory data analysis</li>
+<li>Used sklearn to build machine learning models: random forest regression model, elastic net regression model and gradient boosting regression model to analze the relationship between diet and recovery rate from COVID-19</li>
+<li>Used GridSearchCV for parameter tuning</li>
+<li>Used Matplotlib for model result visualization (e.g.: feature importance, permutation importance, etc)</li>
+</ul>
+<p>Who should look at this blog:</p>
+<ul>
+<li>If you are curious if there is a relationship between diet and COVID-19</li>
+<li>If you want to change your diet habit to prevenet yourself from COVID-19</li>
+<li>If you want to change your diet habit to recover from COVID-19</li>
+<li>If you are interested in general information about COVID-19, like daily increase</li>
+<li>If you want to know how COVID-19 impactes economy</li>
+</ul>
+<p>Overview:
+In this blog, I will analyze COVID-19 from various aspects. And the content of the blog can be divided mainly into 2 parts. The first part is the machine learning module. And the second part is the dashboard module. In the machine learning module, I will talk about how to use machine learning models to make analysis related to COVID-19. In the dashboard module, I will talk discuss how to make dashboard to visualize data, and how to use dashboard to make analysis on COVID-19. In the end, in the reference section, you can find the links to everything I have talked about in this blog.</p>
+<h2 id="part1---ml-investigation-about-relationship-between-healthy-diet-and-recovery-from-covid-19">Part1 - ML Investigation about Relationship Between Healthy Diet and Recovery from COVID-19</h2>
+<p>Objective:
+The objective of this module is to use machine learning techniques to find out if exists an relationship between food intake from different food sources and recovery from COVID-19. This can be helpful for people who want to adjust their diet habits to preventing getting COVID-19, or people who are confirmed with COVID-19, but want to change their diet habits to get recovered from it.</p>
+<p>Data Description:</p>
+<p><img src="/images/blog8/80.png#blog8-80" alt="image"></p>
+<p>The dataset used in this module is the &ldquo;Healthy Diet Dataset&rdquo;, from <a href="https://www.kaggle.com/brunovr/healthydietvscovid19">https://www.kaggle.com/brunovr/healthydietvscovid19</a>. The Healthy diet dataset has 170 rows and 32 columns. Each row in the dataset has all of the information for a certain country. The first columns contains the names of all of the countries. From column 2-26, each column contains the percentage of food intake in kilograms for certain food type in different countries. The last 6 columns contain information like percentage of confirmed cases, death cases, recovery cases, active cases, total population, and one last column for unit declaration.</p>
+<p>Methodology:
+The methodology can be divided into 2 sub-parts, data preprocessing and machine learning modelling.</p>
+<ul>
+<li>Data Preprocessing:</li>
+</ul>
+<p><img src="/images/blog8/81.png#blog8-81" alt="image"></p>
+<p><img src="/images/blog8/79.png#blog8-82" alt="image"></p>
+<p>The first step was to use pandas to read in the dataset. Still using pandas, manipulate and formalize the dataframe. A sample for preprocessing is shown above. For details about how all of the preprocessing is done. Please refer to <a href="https://github.com/biostat823-FinalProject/Game-of-Data">https://github.com/biostat823-FinalProject/Game-of-Data</a></p>
+<p><img src="/images/blog8/82.png#blog8-83" alt="image"></p>
+<p>The second step was to use missingno to impute missing data detected in the dataframe. As shown in the graph, after missing data permutation, there is no value shown as &lsquo;nan&rsquo;.</p>
+<p><img src="/images/blog8/83.png#blog8-84" alt="image"></p>
+<p><img src="/images/blog8/78.png#blog8-85" alt="image"></p>
+<p>The third step was to use seaborn to conduct correlation analysis, analyze the correlation relationship between different features. As shown here, Animal Products has a really high correlation to Vegetal Products. Hence, it may be good idea to manually exclude one of these two features from the dataframe here to increase the model performance in the future.</p>
+<ul>
+<li>Machine Learning Modelling:</li>
+</ul>
+<p><img src="/images/blog8/84.png#blog8-86" alt="image"></p>
+<p><img src="/images/blog8/77.png#blog8-87" alt="image"></p>
+<p>The first step was to define the model input used for training, X and y. Here X is all of the information of the food intake from different food sources in different countries (samples). y is the recovery rate from COVID-19 in different countries (samples).</p>
+<p><img src="/images/blog8/85.png#blog8-88" alt="image"></p>
+<p>The second step was to use sklearn to train test split the data into training set and test set.</p>
+<p>The third step was to build the models using sklearn, a machine learning package.
+The fourth step was to train all of the three models on the training set, and validate the model performance using mean square error (since we were doing regression) as the scoring metric on the testing set.</p>
+<p>Models:</p>
+<p><img src="/images/blog8/86.png#blog8-89" alt="image"></p>
+<p><img src="/images/blog8/87.png#blog8-90" alt="image"></p>
+<p><img src="/images/blog8/88.png#blog8-91" alt="image"></p>
+<p>The models were all built with sklearn and GridSearchCV (5-fold) for parameter tuning. As shown, the random forest regression model was tuned over &ldquo;n_estimators&rdquo;, &ldquo;max_features&rdquo;, &ldquo;max_depth&rdquo;, &ldquo;min_samples_split&rdquo;, &ldquo;min_samples_leaf&rdquo;. The elastic net model was tuned over &ldquo;max_iter&rdquo;, &ldquo;alpha&rdquo;, &ldquo;l1_ratio&rdquo;. Lastly, the gradient boosting model was tuned over &ldquo;learning_rate&rdquo;, &ldquo;max_features&rdquo;, &ldquo;n_estimators&rdquo;, &ldquo;max_depth&rdquo;, &ldquo;min_samples_leaf&rdquo;.</p>
+<p>I will briefly explain the advantage of each model here:</p>
+<p><img src="/images/blog8/89.png#blog8-92" alt="image"></p>
+<ul>
+<li>Random Forest Regression Model: Random forest regression is an ensemble learning method for regression. A random forest regression model combines the predictions of its sub-trees into a single one in order to get a more accurate result. Note that each sub-tree here is itself a machine learning model called decision tree model. Overall, it has advantage in telling the relative importance of each feature.</li>
+</ul>
+<p><img src="/images/blog8/90.png#blog8-93" alt="image"></p>
+<ul>
+<li>Elastic Net Regression Model: Elastic net regression has strong regularization effect. It is essentially a combination of Lasso and Ridge regressions. The model can be effective when the number of features in the dataset is big, or when the features are highly correlated to each other.</li>
+</ul>
+<p><img src="/images/blog8/91.png#blog8-94" alt="image"></p>
+<ul>
+<li>Gradient Boosting Regression Model: Gradient boosting model is similar to random forest regression model, with some modifications in its structure. In a gradient boosting model, its sub-trees are not independent to each other. That means the 2nd sub-tree is based on the first one, the 3rd sub-tree is based on the second one, and so on.</li>
+</ul>
+<p>Results:
+The results are shown below:</p>
+<p><img src="/images/blog8/920.png#blog8-920" alt="image"></p>
+<p><img src="/images/blog8/930.png#blog8-930" alt="image"></p>
+<p><img src="/images/blog8/940.png#blog8-940" alt="image"></p>
+<p><img src="/images/blog8/950.png#blog8-950" alt="image"></p>
+<p>Discussion:</p>
+<ul>
+<li>As resulted, the random forest regression model has mean square error score of 0.0486, the elastic net regression model has mean square error score of 0.0499, and the gradient boosting model has mean square error score of 0.0516. Therefore, in terms of mean square error, the random forest model has the best performance.</li>
+<li>Gradient boosting model sometimes lead to over-fitting. Hence, the first plot shown here indicates that the model&rsquo;s prediction performance is gradually increasing with training. The red line indicates model performance on validation set. The blue line indicates model performance on training set. One thing to be noticed here is that both lines have downward trends, which is good. This means that there indeed exists some relationship between food intake and recovery from COVID-19. Also, this means that the model is not over-fitted.</li>
+<li>The following three plots shown are the feature importance plots for the random forest regression model, elastic net model and gradient boosting model respectively. One thing to be noticed here is that there is no permutation importance plot for elastic net model due to its model structure. From the three plots, we can see that factors like animal fats, cereals and alcholic beverages are considered important by all of the three models. People should be adjust their diet habits accordingly to prevent from COVID-19. There are certainly something more interesting you can conclude from the plots, feel free to take a look at them.</li>
+</ul>
+<h2 id="part2---streamlit-dashboard-for-covid-19-analysis">Part2 - Streamlit Dashboard for COVID-19 Analysis</h2>
+<ul>
+<li>Link to the Dashboard Website: <a href="https://covid-19-823.herokuapp.com/">https://covid-19-823.herokuapp.com/</a></li>
+<li>Dashboard may look slightly different than what&rsquo;s shown in this blog as I will keep udating it.</li>
+</ul>
+<p>Objective:
+The objective of this module is to build a dashboard to publicize the visualizations and analysis done on COVID-19 related dataset.</p>
+<p>Dashboard Content:</p>
+<ul>
+<li>Cover Page</li>
+<li>Overview</li>
+<li>COVID-19 Analysis by Country</li>
+<li>COVID-19 from Economic Perspective</li>
+<li>COVID-19 from Dietary Perspective</li>
+</ul>
+<p>Below, I will briefly show each content in the dashboard, and make discussion about them correspondingly.</p>
+<p>Cover Page:</p>
+<p><img src="/images/blog8/910.png#blog8-hey" alt="image"></p>
+<p>Discussion: The cover page is used to briefly introduce the contents of the dashboard. It always nice to have a page like this to give readers more sense about what they are going to see.</p>
+<p>Overview:</p>
+<p><img src="/images/blog8/911.png#blog8-hey" alt="image"></p>
+<p><img src="/images/blog8/914.png#blog8-hey" alt="image"></p>
+<p>Discussion: Here, people can see total number of COVID-19 cases/deaths by date. It also have several options for adjustment like: &ldquo;Range of date&rdquo; and &ldquo;Measure of Severity&rdquo;. People can change them freely to filter the result as they want. The graph at the bottom shows the total death rate in the form of a global map.</p>
+<p><img src="/images/blog8/912.png#blog8-hey" alt="image"></p>
+<p>In this page, people can see a dynamic graph showing the COVID-19 cases from February to November at country level. We see that currently, United States, India and Brazil are the three top countries with most COVID-19 cases. There is also another graph showing gloval COVID-19 situation in 2020. From this graph, people can also get a broad sense about which part of the globe has greater number of COVID-19 cases. Like before, there are several options for adjustment like: &ldquo;Date&rdquo;, &ldquo;Measure of Severity&rdquo;, &ldquo;Calculation Method&rdquo;, &ldquo;Number of Top Countries&rdquo;.</p>
+<p><img src="/images/blog8/913.png#blog8-hey" alt="image"></p>
+<p>You can also get detailed information of each country by checking the &ldquo;Individual Country&rdquo; block. Shown here is the COVID-19 information in Afghanistan.</p>
+<p>COVID-19 from Economic Perspective:</p>
+<p><img src="/images/blog8/915.png#blog8-hey" alt="image"></p>
+<p><img src="/images/blog8/916.png#blog8-hey" alt="image"></p>
+<p>Discussion: In this page, people can see a graph showing the economic influence of COVID-19 on G20 countries in 2020. We can see that most countries have negative GDP growth rate. This indicates that COVID-19 indeed caused huge negative influence/impact on global economic development. There is another graph showing the relationship between COVID-19 severity and economic influence. From this graph, people can get a broad sense about what countries are influenced more by COVID-19 in terms of economic development and what countries are influenced less. There are several options of adjustment like: &ldquo;The Quarter to Explore on in 2020&rdquo;, &ldquo;Measure of Severity&rdquo;, &ldquo;G20 Countries&rdquo;.</p>
+<p>COVID-19 from Dietary Perspective:</p>
+<p><img src="/images/blog8/917.png#blog8-hey" alt="image"></p>
+<p><img src="/images/blog8/918.png#blog8-hey" alt="image"></p>
+<p>Discussion: In this page, people can see a graph showing the relationship between various food product and COVID-19 recovery rate. For example, looking at animal fats, countries with high animal fats index generally have low recovery rate. There is another graph showing the feature importance for each food product. People may adjust their diet habits based on the plot. There are several options for adjustment like: &ldquo;Food Product&rdquo;, &ldquo;Continent&rdquo;.</p>
+<h2 id="ending">Ending</h2>
+<p>This concludes the blog. In the end, hope this blog helps you get to know more about COVID-19. Thank you!</p>
+<h2 id="references">References</h2>
+<p>The source files and data source can be found at:</p>
+<ul>
+<li>Machine Learning ipynb file: <a href="https://github.com/yzlhahaha/covid-19-analysis">https://github.com/yzlhahaha/covid-19-analysis</a></li>
+<li>Healthy Diet Dataset: <a href="https://www.kaggle.com/brunovr/healthydietvscovid19">https://www.kaggle.com/brunovr/healthydietvscovid19</a></li>
+<li>Dashboard Data Source: <a href="https://datascience.nih.gov/covid-19-open-access-resources,">https://datascience.nih.gov/covid-19-open-access-resources,</a> specifically at <a href="https://dj2taa9i652rf.cloudfront.net/">https://dj2taa9i652rf.cloudfront.net/</a></li>
+<li>Dashboard Website: <a href="https://covid-19-823.herokuapp.com/">https://covid-19-823.herokuapp.com/</a></li>
+<li>GitHub Repository (where everything is stored): <a href="https://github.com/biostat823-FinalProject/Game-of-Data">https://github.com/biostat823-FinalProject/Game-of-Data</a></li>
+</ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Call To Action Section Start -->
+<section id="call-to-action">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">If you are interested...</h1>
+                    
+                    <a href="/contact" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact with me</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Call To Action Section End -->
+
+
+<!-- Footer Section Start -->
+<footer id="footer">
+    <div class="container">
+        <div class="row content-justify-between">
+            <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
+                
+            </div>
+            <div class="col-md-4 col-12">
+                <!-- Social Media -->
+                <ul class="social text-center text-md-right text-lg-right">
+                    <p>You can also find me at:</p>
+                    
+                    <li><a href="https://github.com/yzlhahaha/"><i class="ion-social-github"></i></a></li>
+                    
+                    <li><a href="https://www.linkedin.com/in/zilin-yin-a4138b1a1"><i class="ion-social-linkedin"></i></a></li>
+                    
+                    <li><a href="https://www.facebook.com/profile.php?id=100010171387413"><i class="ion-social-facebook"></i></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer section end -->
+
+<!-- jquery -->
+<script src="https://yzlhahaha.github.io/plugins/jQurey/jquery.min.js"></script>
+<!-- Form Validation -->
+<script src="https://yzlhahaha.github.io/plugins/form-validation/jquery.form.js"></script>
+<script src="https://yzlhahaha.github.io/plugins/form-validation/jquery.validate.min.js"></script>
+<!-- slick slider -->
+<script src="https://yzlhahaha.github.io/plugins/slick/slick.min.js"></script>
+<!-- bootstrap js -->
+<script src="https://yzlhahaha.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+<!-- wow js -->
+<script src="https://yzlhahaha.github.io/plugins/wow-js/wow.min.js"></script>
+<!-- slider js -->
+<script src="https://yzlhahaha.github.io/plugins/slider/slider.js"></script>
+<!-- Fancybox -->
+<script src="https://yzlhahaha.github.io/plugins/facncybox/jquery.fancybox.js"></script>
+<!-- template main js -->
+
+<script src="https://yzlhahaha.github.io/js/script.min.js"></script>
+<!-- google analitycs -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+</script></body>
+</html>

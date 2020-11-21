@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on My Website</title>
+    <link>https://yzlhahaha.github.io/blog/</link>
+    <description>Recent content in Blogs on My Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Nov 2020 18:16:20 -0500</lastBuildDate>
+    
+	<atom:link href="https://yzlhahaha.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>COVID19 Analysis</title>
+      <link>https://yzlhahaha.github.io/blog/blog8/</link>
+      <pubDate>Wed, 18 Nov 2020 18:16:20 -0500</pubDate>
+      
+      <guid>https://yzlhahaha.github.io/blog/blog8/</guid>
+      <description>COVID-19 Analysis Techniques Used in this Analysis:
+ Used Streamlit to build dashboard for data visualization and analysis for public Used pandas, seaborn, missingno for data preprocessing (e.g.: missing data imputation, correlation analysis, etc) Used Plotly for exploratory data analysis Used sklearn to build machine learning models: random forest regression model, elastic net regression model and gradient boosting regression model to analze the relationship between diet and recovery rate from COVID-19 Used GridSearchCV for parameter tuning Used Matplotlib for model result visualization (e.</description>
+    </item>
+    
+    <item>
+      <title>Image Classification - Insects Dataset</title>
+      <link>https://yzlhahaha.github.io/blog/blog7/</link>
+      <pubDate>Thu, 12 Nov 2020 01:29:19 -0500</pubDate>
+      
+      <guid>https://yzlhahaha.github.io/blog/blog7/</guid>
+      <description>Image Classification - Insects Dataset In this blog, I will introduce how to use Convolution Neural Network (CNN) with Keras to perform image classification, using the insects dataset, which contains three different classes: beetles, cockroaches and dragonflies. I will also explain how the model do its work. For example, I will explain what Convolution layer is, what pooling layer is and so on. Hope by the end of this blog, you have a better understanding about how to use CNN for image classification.</description>
+    </item>
+    
+    <item>
+      <title>PhDs awarded in the US</title>
+      <link>https://yzlhahaha.github.io/blog/blog6/</link>
+      <pubDate>Fri, 06 Nov 2020 18:00:27 -0500</pubDate>
+      
+      <guid>https://yzlhahaha.github.io/blog/blog6/</guid>
+      <description>PhDs awarded in the US   In this blog, I will introduce how to use streamlit to create dashboard, and how to used pandas to analyze &amp;ldquo;PhDs awarded in the US&amp;rdquo; dataset.
+  The source code &amp;ldquo;streamlit.py&amp;rdquo; for the streamlit dashboard created can be found at https://github.com/yzlhahaha/streamlit_dashboard. You can take a look at how I used pandas to deal with large dataset, and how my streamlit dashboard is laid out or designed in detail.</description>
+    </item>
+    
+    <item>
+      <title>Star Wars Universe</title>
+      <link>https://yzlhahaha.github.io/blog/blog5/</link>
+      <pubDate>Wed, 21 Oct 2020 17:54:04 -0400</pubDate>
+      
+      <guid>https://yzlhahaha.github.io/blog/blog5/</guid>
+      <description>Star Wars Universe In this blog, I will introduce how use &amp;ldquo;request&amp;rdquo; to read json format data from Star Wars Universe API, and how to accomplish some of the tasks like get the name of the oldest person in the data, get the list of the titles of all the films each person appeared in with data processing techniques.  Step 1: Import necessary Python packages and read in json format data.</description>
+    </item>
+    
+    <item>
+      <title>Spotify Songs Dataset Management</title>
+      <link>https://yzlhahaha.github.io/blog/blog4/</link>
+      <pubDate>Wed, 07 Oct 2020 14:11:50 -0400</pubDate>
+      
+      <guid>https://yzlhahaha.github.io/blog/blog4/</guid>
+      <description>Spotify Songs Dataset Part 1 - Normalization The objective of part 1 is to create a SQLite3 schema to store this data in 3rd normal form (3NF), and populate the tables  Step#1: Use pandas to read in the dataset and briefly take a look at it.   Step#2: Check the data types of all features in the dataset.   Step#3: Normalize the dataset into 1st normal form. Since the dataset is already in 1st normal form in this case, there is nothing to do at this step.</description>
+    </item>
+    
+    <item>
+      <title>Malaria: Informative Visualization</title>
+      <link>https://yzlhahaha.github.io/blog/blog3/</link>
+      <pubDate>Fri, 18 Sep 2020 00:37:42 -0400</pubDate>
+      
+      <guid>https://yzlhahaha.github.io/blog/blog3/</guid>
+      <description>Description  Following are three plots of the Malaria dataset with Plotly. Users can interact with each one of them by specifying the country they want to look for.   Table 1 - Dataset#1 Visualization  &amp;ldquo;malaria_deaths.csv&amp;rdquo; - Malaria deaths by country for all ages across the world and time   Plotly.d3.json(&#34;/plotly/fig1.json&#34;, function(err, fig) { Plotly.plot(&#39;\/plotly\/fig1.json&#39;, fig.data, fig.layout, {responsive: true}); });   Table 2 - Dataset#2 Visualization  &amp;ldquo;malaria_deaths_age.</description>
+    </item>
+    
+    <item>
+      <title>Euler Project</title>
+      <link>https://yzlhahaha.github.io/blog/blog2/</link>
+      <pubDate>Tue, 08 Sep 2020 22:09:57 -0400</pubDate>
+      
+      <guid>https://yzlhahaha.github.io/blog/blog2/</guid>
+      <description>Problem 16 - power digit sum  Problem Description:   Solution:   Define a function called digit_sum which is used to find the digit sum of the input number, one thing is to pay attention is that since the input number is integer, it has to be transformed into string type.   After the function is defined, call the function straightly with the number to be computed and get the result.</description>
+    </item>
+    
+    <item>
+      <title>Creating Personal Website with Hugo</title>
+      <link>https://yzlhahaha.github.io/blog/blog1/</link>
+      <pubDate>Tue, 25 Aug 2020 23:19:07 -0400</pubDate>
+      
+      <guid>https://yzlhahaha.github.io/blog/blog1/</guid>
+      <description>This is my first time creating a Hugo website. During the creation of the website, I realized how convenient and powerful Hugo could be for people that are not experts in web developing, but still want to create their own websites for various different kinds of purposes. I hereby share my experience of creating a website, more specifically, a personal portfolio site with Hugo, step by step:
+  The very first step is to install Hugo (For macOS user, just type in &amp;lsquo;brew install hugo&amp;rsquo; in terminal to install Hugo with Homebrew).</description>
+    </item>
+    
+  </channel>
+</rss>

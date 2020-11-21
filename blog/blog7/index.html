@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  
+  <meta name="description" content="Airspace Hugo theme">
+  <meta name="author" content="Zilin Yin">
+  <meta name="generator" content="Hugo 0.74.3" />
+  
+  <!-- Mobile Specific Metas -->
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Image Classification - Insects Dataset</title>
+  <link rel="icon" href="https://yzlhahaha.github.io/images/favicon.ico">
+
+  <!-- Twitter Bootstrs CSS -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/bootstrap/bootstrap.min.css">
+  <!-- Ionicons Fonts Css -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/ionicons/ionicons.min.css">
+  <!-- animate css -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/animate-css/animate.css">
+  <!-- Hero area slider css-->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/slider/slider.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/slick/slick.css">
+  <!-- Fancybox -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/facncybox/jquery.fancybox.css">
+  <!-- hover -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/hover/hover-min.css">
+  <!-- template main css file -->
+  
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/css/style.min.css" integrity="" media="screen">
+</head><body><section class="top-bar animated-header">
+	<div class="container" id="top-container">
+		<div class="row">
+			<div class="col-lg-12">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<a id="corner-block" class="navbar-brand" href="https://yzlhahaha.github.io/">
+						<img id="corner-icon" src="https://yzlhahaha.github.io/images/home.svg">
+						<div id="corner-text">My Website</div>
+						
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+						aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navigation">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="https://yzlhahaha.github.io/">Home</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://yzlhahaha.github.io/about">About</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://yzlhahaha.github.io/project">Project</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://yzlhahaha.github.io/blog">Blog</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://yzlhahaha.github.io/contact">Contact</a>
+							</li>
+							
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="global-page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h2>Image Classification - Insects Dataset</h2>
+                    <div class="portfolio-meta">
+                        <span>Thursday, Nov 12, 2020</span>|
+                        <span> Tags:
+                            
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="single-post">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                
+                <div class="post-content">
+                    <h1 id="image-classification---insects-dataset">Image Classification - Insects Dataset</h1>
+<h3 id="in-this-blog-i-will-introduce-how-to-use-convolution-neural-network-cnn-with-keras-to-perform-image-classification-using-the-insects-dataset-which-contains-three-different-classes-beetles-cockroaches-and-dragonflies-i-will-also-explain-how-the-model-do-its-work-for-example-i-will-explain-what-convolution-layer-is-what-pooling-layer-is-and-so-on-hope-by-the-end-of-this-blog-you-have-a-better-understanding-about-how-to-use-cnn-for-image-classification">In this blog, I will introduce how to use Convolution Neural Network (CNN) with Keras to perform image classification, using the insects dataset, which contains three different classes: beetles, cockroaches and dragonflies. I will also explain how the model do its work. For example, I will explain what Convolution layer is, what pooling layer is and so on. Hope by the end of this blog, you have a better understanding about how to use CNN for image classification.</h3>
+<ul>
+<li>First, import necessary packages.</li>
+</ul>
+<p><img src="/images/blog7/1.png#blog7-1" alt="image"></p>
+<ul>
+<li>Define the paths where the data are stored, and constants like batch_size, img_height and img_width, then read in the data with Keras. Note that Keras could tell the number of images stored in the data folder, as well as the number of different classes.</li>
+</ul>
+<p><img src="/images/blog7/2.png#blog7-2" alt="image"></p>
+<ul>
+<li>There are 2 things to do here:
+<ul>
+<li>First, we can check the name of each class.</li>
+<li>Second, before building the model, always make sure the data are in the right shape.</li>
+</ul>
+</li>
+</ul>
+<p><img src="/images/blog7/3.png#blog7-3" alt="image"></p>
+<ul>
+<li>
+<p>Below are some concepts I want to explain to easier understand the model. I will mainly talk about Data Augmentation, Convolution and Pooling.</p>
+</li>
+<li>
+<p>Data Augmentation: Check the cat images below. As you can see, some of them are in different orientation, and some of them are zoomed in a little bit. This is what we will do to the training image data. The reason we do this can be explained straightforward. Imagine you are training a model to classify human faces. Your input images are a whole bunch of different human faces, but all facing right toward the front. Now the model has been trained, and it could classify most human faces facing the front correctly. However, what would happen if you ask the model to classify a human face facing left or right? It will have a hard time classifying it. So, this is why we are doing data augmentation.</p>
+</li>
+</ul>
+<p><img src="/images/blog7/4.png#blog7-4" alt="image"></p>
+<ul>
+<li>
+<p>Convolution: Convolution works like a filter, which has customized size (e.g: 3x3, 5x5). You could also look at Convolution as a weight matrix. You are going to use the dot product of this weight matrix and the original image&rsquo;s pixel values as the output. The purpose of Convolution is to increase the siginifance of certain features in the original images.</p>
+</li>
+<li>
+<p>Pooling: Pooling is used to downscale the images. Since Deep Learning model is so complicated and has so many parameters to train, the cost would be really high if we just simply use the original images. What Pooling does it that it looks for a certain area of the original image&rsquo;s pixel values, and based on certain criteria (e.g: min, max, mean), take only one single value (could vary) from that area based on the set criteria. Repeat this process and it will give us a new matrix of pixel values that is much smaller in size.</p>
+</li>
+<li>
+<p>Flatten: Flatten&rsquo;s function is just as its name, it flatten multi-dimension array to 1-D array.</p>
+</li>
+<li>
+<p>Fully Connected Layer: Fully Connected layer is what we considered as neural network, the hidden relationship between the outputs and the inputs are trained and learned during this process through forward and backward propogations.</p>
+</li>
+<li>
+<p>I also want to mention a little bit about Relu Activation layer. This is used to introduce non-linearity to allow network to train itself via backpropagation. Without this activation layer, the training process may run into some issues like vanishing gradient.</p>
+</li>
+</ul>
+<p><img src="/images/blog7/0.png#blog7-0" alt="image"></p>
+<ul>
+<li>
+<p>Now we are ready to build the model.</p>
+</li>
+<li>
+<p>First define random seed to make sure we get the same result every time.</p>
+</li>
+<li>
+<p>Then build the Sequential model. Note that we have also included a normalization layer at the beiginning of the Sequential model. As well as a softmax layer at the end of the model since we have 3 different classes in total.</p>
+</li>
+<li>
+<p>We will use the &lsquo;adam&rsquo; optimizer here to for gradient descent. loss is set as &lsquo;sparse_categorical_crossentropy&rsquo; since we have more than 2 classes to classify. And the evaluation metric is set to &lsquo;accuracy&rsquo;, which is commonly used for classification performance evaluation.</p>
+</li>
+</ul>
+<p><img src="/images/blog7/5.png#blog7-5" alt="image"></p>
+<ul>
+<li>We can take a look at the summary of the model. One thing I want to mention is that the input for this model are a whole bunch of images. How does the model understand the images? In other words, how does the model put all the complex images into its network? To answer this question, I will introduce the idea of RGB. Bascially, all images can be converted into 3-D arrays, each one of the 3-D represents one of RGB, Red, Green or Blue. And each cell of the array ranges from 0 to 255, representing the intensity of the color. Hence, all images, essesntially, can be turned into pure numbers, and thus can be put into the model&rsquo;s neural network.</li>
+</ul>
+<p><img src="/images/blog7/6.png#blog7-6" alt="image"></p>
+<ul>
+<li>And we are ready to begin the training process. Here we set the number of epochs to 30 because I find that to be a good number to yield a good result.</li>
+</ul>
+<p><img src="/images/blog7/7.png#blog7-7" alt="image"></p>
+<ul>
+<li>And as shown here, after 30 epochs, the validation loss is about 0.2 and the validation accuracy is about 0.92.</li>
+</ul>
+<p><img src="/images/blog7/8.png#blog7-8" alt="image"></p>
+<ul>
+<li>Below are visualizations of the model&rsquo;s training process. Basically, losses decrease with epochs and accuracies increase with epochs.</li>
+</ul>
+<p><img src="/images/blog7/9.png#blog7-9" alt="image"></p>
+<p><img src="/images/blog7/10.png#blog7-10" alt="image"></p>
+<ul>
+<li>We also want to use outside image to test our model, see how it works. Here is an image of a dragonfly I found online. Now let&rsquo;s try letting the model tell what this is and see what happens.</li>
+</ul>
+<p><img src="/images/blog7/11.jpg#blog7-11" alt="image"></p>
+<p><img src="/images/blog7/12.png#blog7-12" alt="image"></p>
+<p><img src="/images/blog7/13.png#blog7-13" alt="image"></p>
+<ul>
+<li>As a result, the model successfully classify it as a dragonfly, with around 57% confidence. The dragonfly I used for testing is not a commonly seen dragonfly since it has color of gold. Hence, the confidence level may could have be higher if the dragonfly image used for testing is a common dragonfly.</li>
+</ul>
+<p><img src="/images/blog7/14.png#blog7-14" alt="image"></p>
+<ul>
+<li>If you are interested in using more outside images for testing, you can just follow my steps and do the same thing.</li>
+</ul>
+<h2 id="references">References</h2>
+<p>The source files and data source can be found at:</p>
+<ul>
+<li>ipynb file: <a href="https://github.com/yzlhahaha/image-classification">https://github.com/yzlhahaha/image-classification</a></li>
+<li>data source: <a href="https://www.insectimages.org/index.cfm">https://www.insectimages.org/index.cfm</a></li>
+</ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Call To Action Section Start -->
+<section id="call-to-action">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">If you are interested...</h1>
+                    
+                    <a href="/contact" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact with me</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Call To Action Section End -->
+
+
+<!-- Footer Section Start -->
+<footer id="footer">
+    <div class="container">
+        <div class="row content-justify-between">
+            <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
+                
+            </div>
+            <div class="col-md-4 col-12">
+                <!-- Social Media -->
+                <ul class="social text-center text-md-right text-lg-right">
+                    <p>You can also find me at:</p>
+                    
+                    <li><a href="https://github.com/yzlhahaha/"><i class="ion-social-github"></i></a></li>
+                    
+                    <li><a href="https://www.linkedin.com/in/zilin-yin-a4138b1a1"><i class="ion-social-linkedin"></i></a></li>
+                    
+                    <li><a href="https://www.facebook.com/profile.php?id=100010171387413"><i class="ion-social-facebook"></i></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer section end -->
+
+<!-- jquery -->
+<script src="https://yzlhahaha.github.io/plugins/jQurey/jquery.min.js"></script>
+<!-- Form Validation -->
+<script src="https://yzlhahaha.github.io/plugins/form-validation/jquery.form.js"></script>
+<script src="https://yzlhahaha.github.io/plugins/form-validation/jquery.validate.min.js"></script>
+<!-- slick slider -->
+<script src="https://yzlhahaha.github.io/plugins/slick/slick.min.js"></script>
+<!-- bootstrap js -->
+<script src="https://yzlhahaha.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+<!-- wow js -->
+<script src="https://yzlhahaha.github.io/plugins/wow-js/wow.min.js"></script>
+<!-- slider js -->
+<script src="https://yzlhahaha.github.io/plugins/slider/slider.js"></script>
+<!-- Fancybox -->
+<script src="https://yzlhahaha.github.io/plugins/facncybox/jquery.fancybox.js"></script>
+<!-- template main js -->
+
+<script src="https://yzlhahaha.github.io/js/script.min.js"></script>
+<!-- google analitycs -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+</script></body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  
+  <meta name="description" content="Airspace Hugo theme">
+  <meta name="author" content="Zilin Yin">
+  <meta name="generator" content="Hugo 0.74.3" />
+  
+  <!-- Mobile Specific Metas -->
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Creating Personal Website with Hugo</title>
+  <link rel="icon" href="https://yzlhahaha.github.io/images/favicon.ico">
+
+  <!-- Twitter Bootstrs CSS -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/bootstrap/bootstrap.min.css">
+  <!-- Ionicons Fonts Css -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/ionicons/ionicons.min.css">
+  <!-- animate css -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/animate-css/animate.css">
+  <!-- Hero area slider css-->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/slider/slider.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/slick/slick.css">
+  <!-- Fancybox -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/facncybox/jquery.fancybox.css">
+  <!-- hover -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/hover/hover-min.css">
+  <!-- template main css file -->
+  
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/css/style.min.css" integrity="" media="screen">
+</head><body><section class="top-bar animated-header">
+	<div class="container" id="top-container">
+		<div class="row">
+			<div class="col-lg-12">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<a id="corner-block" class="navbar-brand" href="https://yzlhahaha.github.io/">
+						<img id="corner-icon" src="https://yzlhahaha.github.io/images/home.svg">
+						<div id="corner-text">My Website</div>
+						
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+						aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navigation">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="https://yzlhahaha.github.io/">Home</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://yzlhahaha.github.io/about">About</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://yzlhahaha.github.io/project">Project</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://yzlhahaha.github.io/blog">Blog</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://yzlhahaha.github.io/contact">Contact</a>
+							</li>
+							
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="global-page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h2>Creating Personal Website with Hugo</h2>
+                    <div class="portfolio-meta">
+                        <span>Tuesday, Aug 25, 2020</span>|
+                        <span> Tags:
+                            
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="single-post">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                
+                <div class="post-content">
+                    <p>This is my first time creating a Hugo website. During the creation of the website, I realized how convenient and powerful
+Hugo could be for people that are not experts in web developing, but still want to create their own websites for
+various different kinds of purposes. I hereby share my experience of creating a website, more specifically, a personal
+portfolio site with Hugo, step by step:</p>
+<ul>
+<li>
+<p>The very first step is to install Hugo (For macOS user, just type in &lsquo;brew install hugo&rsquo; in terminal to install Hugo with Homebrew).
+Make sure Homebrew is installed beforehand.</p>
+<p><img src="/images/blog1/1-1.png#blog1-1" alt="image"></p>
+</li>
+<li>
+<p>Create a new Hugo site with command line &lsquo;hugo new site quickstart&rsquo;</p>
+<p><img src="/images/blog1/1-2.png#blog1-2" alt="image"></p>
+</li>
+<li>
+<p>Find an appropriate theme for the newly created hugo site (link: <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a>)</p>
+</li>
+<li>
+<p>Add in the theme by first cd into the site directory, then type in command lines:
+&lsquo;git init&rsquo; to first initialize a git repository on local machine,
+and &lsquo;git submodule add {web URL of the github repository of the web theme}&rsquo; to add the theme into the site directory</p>
+<p><img src="/images/blog1/1-3.png#blog1-3" alt="image"></p>
+</li>
+<li>
+<p>Add the theme into the site configuration by type in command line:
+&lsquo;echo &lsquo;theme = &ldquo;{theme name}&quot;&lsquo;&raquo;config.toml</p>
+<p><img src="/images/blog1/1-4.png#blog1-4" alt="image"></p>
+</li>
+<li>
+<p>Customize site theme by editing config.toml in site directory accordingly</p>
+</li>
+<li>
+<p>Add new content like posts or projects by type in command line:
+&lsquo;hugo new {route where new content to be insert followed by file name, e.g: Posts/something.md}&rsquo;</p>
+<p><img src="/images/blog1/1-5.png#blog1-5" alt="image"></p>
+</li>
+<li>
+<p>Start the Hugo server by type in command line:
+&lsquo;hugo server -D&rsquo; to start the server in development mode
+and navigate to the site at appropriate address</p>
+<p><img src="/images/blog1/1-6.png#blog1-6" alt="image"></p>
+</li>
+<li>
+<p>Create static site by doing the following:</p>
+<p><img src="/images/blog1/1-7.png#blog1-7" alt="image"></p>
+</li>
+<li>
+<p>Finally the website is ready to be deployed to Github Page, that can be done by following Hugo&rsquo;s official tutorial for deploying hugo websites on github</p>
+</li>
+</ul>
+<h3 id="references">References</h3>
+<p>And the code for the static site prepared for Github Page can be found at:</p>
+<ul>
+<li><a href="https://github.com/yzlhahaha/yzlhahaha.github.io">https://github.com/yzlhahaha/yzlhahaha.github.io</a></li>
+</ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Call To Action Section Start -->
+<section id="call-to-action">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">If you are interested...</h1>
+                    
+                    <a href="/contact" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact with me</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Call To Action Section End -->
+
+
+<!-- Footer Section Start -->
+<footer id="footer">
+    <div class="container">
+        <div class="row content-justify-between">
+            <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
+                
+            </div>
+            <div class="col-md-4 col-12">
+                <!-- Social Media -->
+                <ul class="social text-center text-md-right text-lg-right">
+                    <p>You can also find me at:</p>
+                    
+                    <li><a href="https://github.com/yzlhahaha/"><i class="ion-social-github"></i></a></li>
+                    
+                    <li><a href="https://www.linkedin.com/in/zilin-yin-a4138b1a1"><i class="ion-social-linkedin"></i></a></li>
+                    
+                    <li><a href="https://www.facebook.com/profile.php?id=100010171387413"><i class="ion-social-facebook"></i></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer section end -->
+
+<!-- jquery -->
+<script src="https://yzlhahaha.github.io/plugins/jQurey/jquery.min.js"></script>
+<!-- Form Validation -->
+<script src="https://yzlhahaha.github.io/plugins/form-validation/jquery.form.js"></script>
+<script src="https://yzlhahaha.github.io/plugins/form-validation/jquery.validate.min.js"></script>
+<!-- slick slider -->
+<script src="https://yzlhahaha.github.io/plugins/slick/slick.min.js"></script>
+<!-- bootstrap js -->
+<script src="https://yzlhahaha.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+<!-- wow js -->
+<script src="https://yzlhahaha.github.io/plugins/wow-js/wow.min.js"></script>
+<!-- slider js -->
+<script src="https://yzlhahaha.github.io/plugins/slider/slider.js"></script>
+<!-- Fancybox -->
+<script src="https://yzlhahaha.github.io/plugins/facncybox/jquery.fancybox.js"></script>
+<!-- template main js -->
+
+<script src="https://yzlhahaha.github.io/js/script.min.js"></script>
+<!-- google analitycs -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+</script></body>
+</html>

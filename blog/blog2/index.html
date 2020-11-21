@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  
+  <meta name="description" content="Airspace Hugo theme">
+  <meta name="author" content="Zilin Yin">
+  <meta name="generator" content="Hugo 0.74.3" />
+  
+  <!-- Mobile Specific Metas -->
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Euler Project</title>
+  <link rel="icon" href="https://yzlhahaha.github.io/images/favicon.ico">
+
+  <!-- Twitter Bootstrs CSS -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/bootstrap/bootstrap.min.css">
+  <!-- Ionicons Fonts Css -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/ionicons/ionicons.min.css">
+  <!-- animate css -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/animate-css/animate.css">
+  <!-- Hero area slider css-->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/slider/slider.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/slick/slick.css">
+  <!-- Fancybox -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/facncybox/jquery.fancybox.css">
+  <!-- hover -->
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/plugins/hover/hover-min.css">
+  <!-- template main css file -->
+  
+  <link rel="stylesheet" href="https://yzlhahaha.github.io/css/style.min.css" integrity="" media="screen">
+</head><body><section class="top-bar animated-header">
+	<div class="container" id="top-container">
+		<div class="row">
+			<div class="col-lg-12">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<a id="corner-block" class="navbar-brand" href="https://yzlhahaha.github.io/">
+						<img id="corner-icon" src="https://yzlhahaha.github.io/images/home.svg">
+						<div id="corner-text">My Website</div>
+						
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+						aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navigation">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="https://yzlhahaha.github.io/">Home</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://yzlhahaha.github.io/about">About</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://yzlhahaha.github.io/project">Project</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://yzlhahaha.github.io/blog">Blog</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://yzlhahaha.github.io/contact">Contact</a>
+							</li>
+							
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="global-page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h2>Euler Project</h2>
+                    <div class="portfolio-meta">
+                        <span>Tuesday, Sep 8, 2020</span>|
+                        <span> Tags:
+                            
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="single-post">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                
+                <div class="post-content">
+                    <h2 id="problem-16---power-digit-sum">Problem 16 - power digit sum</h2>
+<ul>
+<li>Problem Description:</li>
+</ul>
+<p><img src="/images/blog2/pro1.png#blog2-p1" alt="image"></p>
+<ul>
+<li>Solution:</li>
+</ul>
+<p><img src="/images/blog2/8.png#blog2-8" alt="image"></p>
+<ul>
+<li>Define a function called digit_sum which is used to find the digit sum of the input number, one thing is to pay attention is that since the input number is integer, it has to be transformed into string type.</li>
+</ul>
+<p><img src="/images/blog2/9.png#blog2-9" alt="image"></p>
+<ul>
+<li>After the function is defined, call the function straightly with the number to be computed and get the result.</li>
+</ul>
+<h2 id="problem-52---permuted-multiples">Problem 52 - Permuted multiples</h2>
+<ul>
+<li>Problem Description:</li>
+</ul>
+<p><img src="/images/blog2/pro2.png#blog2-p2" alt="image"></p>
+<ul>
+<li>Solution:</li>
+</ul>
+<p><img src="/images/blog2/5.png#blog2-5" alt="image"></p>
+<ul>
+<li>Within the nested function check_digits, we have two functions. The first function is is_same, is_same is used to check if two number have the same length, and also to check if they contain exactly the same digits (could be in different orders). One thing to be noticed in this function is that, say we have two numbers, num1 and num2. We may first pick out the first digit in num1 and see if it&rsquo;s in num2, and if it does, it&rsquo;s very important to make a note in num2, specifically note the digit in num2 that was used to match the digit in num1 such that it can&rsquo;t be used anymore. The second function is give_ans, give_ans is just a helper function to help us quicker get the final result. It compares the input number and 2,3,4,5,6 times itself. If it returns 1, then the input number satisfy the problem requirement.</li>
+</ul>
+<p><img src="/images/blog2/6.png#blog2-6" alt="image">
+<img src="/images/blog2/7.png#blog2-7" alt="image"></p>
+<ul>
+<li>Starting with input number of 1, check if the input number satisfy the problem requirement, with increment of 1, until it meets the requirement. Finally, it ends at 142857.</li>
+</ul>
+<h2 id="problem-112---bouncy-numbers">Problem 112 - Bouncy numbers</h2>
+<ul>
+<li>Problem Description:</li>
+</ul>
+<p><img src="/images/blog2/pro3.png#blog2-p3" alt="image"></p>
+<ul>
+<li>Solution:</li>
+</ul>
+<p><img src="/images/blog2/1.png#blog2-1" alt="image">
+<img src="/images/blog2/2.png#blog2-2" alt="image"></p>
+<ul>
+<li>Within the nested function is_bouncy, we have three functions. They are check_increase, check_decrease and check_bouncy respectively. Apparently, they are each used to check if the input number is they type that they each is responsible for. For check_increase and check_decrease, they simply first convert the type of input integer into string, then comparing the value of each digit of the string from left to right and see if it continuously (increase or stay the same) or (decrease or stay the same). Both functions just mentioned return 1 if the input number belongs to the type they each is responsible for and return -1 if the opposite. For function check_bouncy, it simply check whether the number is neither increasing nor decreasing using the functions check_increase and check_decrease.</li>
+</ul>
+<p><img src="/images/blog2/3.png#blog2-3" alt="image">
+<img src="/images/blog2/4.png#blog2-4" alt="image"></p>
+<ul>
+<li>start from 100 (as we know that all two digits numbers must not be bouncy numbers), we check if the number is bouncy, with increment of 1, until the count of bouncy numbers / total count of numbers is exactly 0.99. Note that within every loop, nums is incremented by 1, and bouncy_nums only increment if the input number pass the is_bouncy&rsquo;s check (in this case, return 1).</li>
+</ul>
+<h2 id="references">References</h2>
+<p>The solution (.ipynb) can be found at:</p>
+<ul>
+<li><a href="https://github.com/yzlhahaha/euler-project">https://github.com/yzlhahaha/euler-project</a></li>
+</ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Call To Action Section Start -->
+<section id="call-to-action">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">If you are interested...</h1>
+                    
+                    <a href="/contact" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact with me</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Call To Action Section End -->
+
+
+<!-- Footer Section Start -->
+<footer id="footer">
+    <div class="container">
+        <div class="row content-justify-between">
+            <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
+                
+            </div>
+            <div class="col-md-4 col-12">
+                <!-- Social Media -->
+                <ul class="social text-center text-md-right text-lg-right">
+                    <p>You can also find me at:</p>
+                    
+                    <li><a href="https://github.com/yzlhahaha/"><i class="ion-social-github"></i></a></li>
+                    
+                    <li><a href="https://www.linkedin.com/in/zilin-yin-a4138b1a1"><i class="ion-social-linkedin"></i></a></li>
+                    
+                    <li><a href="https://www.facebook.com/profile.php?id=100010171387413"><i class="ion-social-facebook"></i></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer section end -->
+
+<!-- jquery -->
+<script src="https://yzlhahaha.github.io/plugins/jQurey/jquery.min.js"></script>
+<!-- Form Validation -->
+<script src="https://yzlhahaha.github.io/plugins/form-validation/jquery.form.js"></script>
+<script src="https://yzlhahaha.github.io/plugins/form-validation/jquery.validate.min.js"></script>
+<!-- slick slider -->
+<script src="https://yzlhahaha.github.io/plugins/slick/slick.min.js"></script>
+<!-- bootstrap js -->
+<script src="https://yzlhahaha.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+<!-- wow js -->
+<script src="https://yzlhahaha.github.io/plugins/wow-js/wow.min.js"></script>
+<!-- slider js -->
+<script src="https://yzlhahaha.github.io/plugins/slider/slider.js"></script>
+<!-- Fancybox -->
+<script src="https://yzlhahaha.github.io/plugins/facncybox/jquery.fancybox.js"></script>
+<!-- template main js -->
+
+<script src="https://yzlhahaha.github.io/js/script.min.js"></script>
+<!-- google analitycs -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+</script></body>
+</html>
